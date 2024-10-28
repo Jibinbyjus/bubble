@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #A9C1A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#main {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#top-bar {
+    width: 100%;
+    background-color: #355E3B;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.info-box {
+    text-align: center;
+}
+
+.info-box h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.value {
+    background-color: #d9d9d9;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+#game-area {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+.circle {
+    width: 60px;            
+    height: 60px;              
+    border-radius: 50%;       
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    margin: 1px;
+    background-color: lightblue; 
+ }
+ 
+ 
+.circle:hover{
+   background-color: rgb(14, 97, 14);
+   cursor: pointer;
+}
+@media (max-width: 500px) {
+    .circle {
+       width: 50px;
+       height: 80px;
+       font-size: 15px;
+    }
+ }
+ 
